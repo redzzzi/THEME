@@ -1,6 +1,6 @@
 <br>
 
-예쁜 유니콘 테마 !! <a href="https://github.com/gsalami00/softblobby">softblobby</a><br><br>
+예쁜 유니콘 🦄 테마 !! <a href="https://github.com/gsalami00/softblobby">softblobby</a><br><br>
 ===
 <br>
 <ol>
