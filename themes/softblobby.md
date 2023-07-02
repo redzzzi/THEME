@@ -19,3 +19,15 @@
   <li><pre><code>vi ~/.oh-my-zsh/themes/softblobby.zsh-theme</code></pre></li>
   <li><pre><code>source ~/.zshrc</code></pre><br></li>
 </ol>
+<br>
+색상 바꾸기
+
+---
+```shell
+vi ~/.oh-my-zsh/themes/softblobby.zsh-theme
+```
+```shell
+echo '%F{225}%K{212}╭ <이모티콘>  %D{%b %e %a}.%t  %f%k%F{212}%K{000}\ue0b0%f%k'
+```
+* 여기에서 ```%F{원하는폰트색상}```, ```%K{원하는배경색상}```임.
+* 같은 줄의 다른 ```%F{ }```, ```%K{ }``` 같은 경우, ```%F{앞선배경색상}```, ```%K{다음배경색상}```으로 설정하면 됨.
