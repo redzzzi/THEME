@@ -36,8 +36,8 @@ echo '%F{225}%K{212}╭ <이모티콘>  %D{%b %e %a}.%t  %f%k%F{212}%K{000}\ue0b
 <br>
 <br>
 
-2023.07.03.
----
+## 1. 2023.07.03.
+
 <img src="https://github.com/redzzzi/THEME/assets/127263392/6f6eaeaf-1fce-4d95-ac74-a83d1f661dd0" width="500px">
 
 <details>
@@ -71,6 +71,49 @@ git_info () {
         echo "%F{000}%K{000}\ue0b0%f%k"
     else
         echo "%F{000}%K{000}\ue0b0%f%k%F{234}%K{147}  🍎   $(git_prompt_info)  %F{000}%K{000}\ue0b0%f%k"
+    fi
+}
+```
+
+</div>
+</details>
+
+
+## 2.
+
+<img src="https://github.com/redzzzi/THEME/assets/127263392/af6994a3-52ef-4bb8-bba0-fc0fa8d42786" width="500px">
+
+<details>
+<summary>코드</summary>
+<div markdown="1">
+
+```shell
+ZSH_THEME_GIT_PROMPT_PREFIX=""
+ZSH_THEME_GIT_PROMPT_SUFFIX=""
+ZSH_THEME_GIT_PROMPT_DIRTY=""
+ZSH_THEME_GIT_PROMPT_CLEAN=""
+
+PROMPT='$(now)$(username)$(directory)$(git_info)%f%k
+╰→  '
+
+now () {
+    echo '%F{225}%K{212}╭ 🐇  %D{%b %e %a}.%t  %f%k%F{000}%K{000}\ue0b0%f%k'
+}
+
+username() {
+    echo '%F{212}%K{225}  🌷  %B%n%b   %f%k%F{000}%K{000}\ue0b0%f%k'
+}
+
+directory () {
+    echo '%F{#DF8EFF}%K{#fcf0ff}  🫧  %0~  %f%k'
+}
+
+git_info () {
+    GIT_INFO="$(git_prompt_info)"
+    if [[ $GIT_INFO == "" ]] then
+        echo "%F{#fcf0ff}%K{#fcf0ff}\ue0b0%f%k"
+    else
+        echo "%F{000}%K{000}\ue0b0%f%k%F{#F0F8FF}%K{#c49adb}  💜   $(git_prompt_info)  %F{000}%K{000}\ue0b0%f%k"
     fi
 }
 ```
